@@ -6,7 +6,7 @@
         <meta name="robots" content="noindex, nofollow">
         <meta name="Description" content="Contact Page for Nelson Gou's Website">
         <title>Contact - Nelson Gou</title>
-        <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link rel="icon" type="ico" href="images/favicon.png">
     </head>
     <body>
@@ -19,6 +19,25 @@
 
         <h1>Contact Me!</h1>
 
-        <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDr9SccOO4Na9tyhJuJiiFVualNvSiKJRDYZZ61kQedB42lw/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></center>
+        <form action="https://formspree.io/f/xgerknnz" method="POST">
+            <label>
+                Email:
+                <input type="email" name="Email">
+            </label><br><br>
+
+            <label>
+                Name:
+                <input type="name" name="Name">
+            </label><br><br>
+
+            <label>
+                <div style="padding-bottom: 2px;">Your message:</div><br>
+                <textarea rows="5" cols="50" name="Message"></textarea>
+            </label><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p style="font-size: 10px;">This form was made with Formspree.</p>
     </body>
 </html>
