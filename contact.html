@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nelson Gou</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/b8e453ecdd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="title">
+            <img src="img/Nelson Gou.JPG" alt="Nelson Gou" class="logo">
+            <div class="name">Nelson Gou</div>
+        </div>
+
+        <i class="fa-solid fa-bars menu" id="menu"></i>
+
+        <div class="pages" id="navpages">
+            <a href="/">Home</a>
+            <a href="projects.html">Projects</a>
+            <a class="current" href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Contact Me!</h1>
+        <form name="Contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/contact.html?submitted">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="Name" id="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="Email" id="email" required>
+            </div>
+
+            <label for="msg">Message:</label>
+            <textarea name="Message" id="msg" cols="50" rows="10" required></textarea>
+
+            <div data-netlify-recaptcha="true"></div>
+            <input type="submit" value="Submit">
+        </form>   
+    </div>
+
+    <footer>
+        <a href="https://github.com/ng8165" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/nelson.gou/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nelson-gou/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UC3EkztHOKgr7m12qqggo4zg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

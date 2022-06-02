@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+form > * {
+    display: block;
+    margin: 8px 0;
+}
+
+form input, form textarea {
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
