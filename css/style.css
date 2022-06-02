@@ -19,6 +19,7 @@ body {
     margin: 0;
     width: 100%;
     min-height: 100%;
+    min-width: 200px;
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
@@ -112,7 +113,7 @@ nav .pages .current {
     nav .pages {
         display: none;
         position: absolute;
-        top: 70px;
+        top: 65px;
         right: 20px;
         flex-direction: column;
         align-items: stretch;
@@ -131,6 +132,7 @@ nav .pages .current {
         border-radius: 0;
         padding: 12px 8px;
         margin: 0;
+        width: 100px;
         text-align: center;
     }
 
