@@ -1,3 +1,3 @@
-# ng8165.github.io
+# nelsongou
 
-This repository contains published files for my website, ng8165.github.io.
+This repository contains the code my personal website, [nelsongou.netlify.app](https://nelsongou.netlify.app).
