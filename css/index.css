@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+.content .desc {
+    line-height: 2;
+}
+
 .content .pages {
     display: flex;
     flex-wrap: wrap;

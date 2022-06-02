@@ -59,15 +59,26 @@ nav .title {
 }
 
 nav .title .logo {
+    border: 0 solid var(--med-blue);
     border-radius: 50%;
     height: 100%;
     width: auto;
     position: relative;
+    transition: border-width 250ms ease-in-out;
+}
+
+nav .title .logo:hover {
+    border-width: 5px;
 }
 
 nav .title .name {
     margin-left: 10px;
     font-size: 2em;
+}
+
+nav .menu {
+    font-size: 1.25em !important;
+    display: none;
 }
 
 nav .pages {
@@ -76,7 +87,7 @@ nav .pages {
     justify-content: flex-end;
 }
 
-nav .pages a {
+nav .pages a, nav .menu {
     color: black;
     text-decoration: none;
     text-align: center;
@@ -87,13 +98,51 @@ nav .pages a {
     transition: background-color 250ms ease-in-out;
 }
 
-nav .pages a:hover, nav .pages a:focus-within {
+nav .pages a:hover, nav .pages a:focus-within,
+nav .menu:hover, nav .menu:focus-within {
     background-color: var(--dark-blue);
 }
 
 nav .pages .current {
     text-decoration: underline black solid 1px;
     text-underline-offset: 3px;
+}
+
+@media screen and (max-width: 430px) {
+    nav .pages {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        background-color: var(--med-blue);
+        border: 3px solid black;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    nav .pages.show {
+        display: flex;
+    }
+
+    nav .pages a {
+        border-radius: 0;
+        padding: 12px 8px;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav .menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    nav .title .name {
+        display: none;
+    }
 }
 
 /* footer */
@@ -109,4 +158,9 @@ footer i {
     color: black;
     margin: 5px;
     font-size: 2em;
+    transition: color 250ms ease-in-out;
+}
+
+footer i:hover {
+    color: rgb(80, 80, 80);
 }
