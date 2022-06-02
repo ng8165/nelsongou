@@ -61,16 +61,9 @@ nav .title {
 }
 
 nav .title .logo {
-    border: 0 solid var(--med-blue);
     border-radius: 50%;
     height: 100%;
     width: auto;
-    position: relative;
-    transition: border-width 250ms ease-in-out;
-}
-
-nav .title .logo:hover {
-    border-width: 5px;
 }
 
 nav .title .name {
