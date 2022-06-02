@@ -58,6 +58,7 @@ nav .title {
     align-items: center;
     height: 100%;
     margin-right: 10px;
+    text-decoration: none;
 }
 
 nav .title .logo {
@@ -69,6 +70,7 @@ nav .title .logo {
 nav .title .name {
     margin-left: 10px;
     font-size: 2em;
+    color: black;
 }
 
 nav .menu {
