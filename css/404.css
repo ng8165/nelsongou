@@ -1,0 +1,25 @@
+.content {
+    justify-content: center;
+}
+
+.content .error {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.content .button {
+    color: black;
+    text-transform: uppercase;
+    background-color: var(--dark-blue);
+    padding: 20px 10px;
+    margin: 8px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 250ms ease-in-out;
+}
+
+.content .button:hover, .content .button:focus-within {
+    background-color: var(--med-blue);
+}
