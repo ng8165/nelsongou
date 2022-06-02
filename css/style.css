@@ -74,6 +74,8 @@ nav .title .name {
 }
 
 nav .menu {
+    border: 0;
+    background-color: inherit;
     font-size: 1.25em !important;
     display: none;
 }
