@@ -1,5 +1,5 @@
 .content .error {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -10,7 +10,6 @@
     padding: 20px 10px;
     margin: 8px;
     width: 150px;
-    text-align: center;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 250ms ease-in-out;

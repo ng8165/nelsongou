@@ -1,0 +1,43 @@
+h1 {
+    margin: 20px !important;
+}
+
+/* project */
+
+.project .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project img {
+    max-width: 60%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .project img {
+        max-width: 90%;
+    }
+}
+
+.project .link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.project .link a {
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 8px;
+    background-color: var(--med-blue);
+    transition: background-color 250ms ease-in-out;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.project .link a:hover {
+    background-color: var(--dark-blue);
+}

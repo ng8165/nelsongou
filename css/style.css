@@ -19,7 +19,7 @@ body {
     margin: 0;
     width: 100%;
     min-height: 100%;
-    min-width: 200px;
+    min-width: 150px;
     background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .content > *:not(nav) {
@@ -69,14 +70,15 @@ nav .title .logo {
 
 nav .title .name {
     margin-left: 10px;
-    font-size: 2em;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: black;
 }
 
 nav .menu {
     border: 0;
     background-color: inherit;
-    font-size: 1.25em !important;
+    font-size: 1.25rem !important;
     display: none;
 }
 
@@ -90,7 +92,7 @@ nav .pages a, nav .menu {
     color: black;
     text-decoration: none;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 5px;
     border-radius: 8px;
     background-color: inherit;
@@ -103,11 +105,11 @@ nav .menu:hover, nav .menu:focus-within {
 }
 
 nav .pages .current {
-    text-decoration: underline black solid 1px;
+    text-decoration: underline;
     text-underline-offset: 3px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 400px) {
     nav .pages {
         display: none;
         position: absolute;
@@ -139,7 +141,7 @@ nav .pages .current {
     }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 300px) {
     nav .title .name {
         display: none;
     }
@@ -157,7 +159,7 @@ footer {
 footer i {
     color: black;
     margin: 5px;
-    font-size: 2em;
+    font-size: 2rem;
     transition: color 250ms ease-in-out;
 }
 
