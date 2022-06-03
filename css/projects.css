@@ -9,6 +9,10 @@ h1 {
     font-weight: bold;
 }
 
+.project .desc {
+    margin: 10px 0;
+}
+
 .project img {
     max-width: 60%;
     height: auto;
@@ -24,7 +28,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 8px;
 }
 
 .project .link a {
